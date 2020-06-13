@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+ var i = 1;
+ document.write("</br>" ," Counting" , "</br>");
+
+ while(i <= 15) {
+ document.write(i + " ");
+ i++;
+ }
+
+ document.write("</br>" ," Reverse counting" , "</br>");
+    
+ function reverse_a_number(n)
+ {
+ 	n = n + "";
+ 	return n.split("").reverse().join(" ");
+ }
+ document.write(reverse_a_number(12345678901));
+
+
+
+ document.write("</br>" ," Even number" , "</br>");
+ for(var i = 0; i <= 20; i++) {
+     if((i % 2) == 0) {
+        
+         document.write(" " + i )
+     }
+ }
+ document.write("</br>" ," Odd number" , "</br>");
+
+ for(var i = 0; i <= 20; i++) {
+     if((i % 2) != 0)  {
+         document.write(" " + i )
+     }
+ }
+
+ document.write("</br>" ," Series" , "</br>");
+ for(var i = 0; i <= 20; i++) {
+     if((i % 2) == 0) {
+        
+         document.write(" " + i+"k" )
+     }
+ }
+    </script>
+</body>
+</html>

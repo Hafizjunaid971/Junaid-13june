@@ -1,0 +1,47 @@
+body{
+    margin:0;
+    background-image: url('junaid\ 2.PNG');
+    background-size: 100%;
+    font-family: 'Krona One', sans-serif;
+}
+.sub-div>a>.up{
+    border-radius: 100%;
+    border:none;
+    font-size: 20px;
+    
+}
+.main-div>#link{
+    margin-left: 90%;
+    margin-bottom:150%;
+
+}
+.main-div{
+    background-color:skyblue;
+    opacity:0.90;
+    text-align: center;
+    height: 100%;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+}
+.main-div h1{
+    text-transform: uppercase;
+    color: white;
+}
+.sub-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub-div>a>button{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.code{
+    color:#ffffff;
+}
+#link>.up{
+    position: fixed;
+}
+.a.text-primary{
+    color:red !important;
+}

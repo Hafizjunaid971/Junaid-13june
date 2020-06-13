@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       var secret = 2;
+var guess = prompt("GUESS THE SECRET NUMBER...(range = 1-10)");
+if (guess == secret){
+    document.write("Bingo! Correct answer");
+}
+else if(guess+1 == secret || guess == secret+1 ){
+    document.write("Close enough to the correct answer");
+}
+else{
+    document.write("YOUR GUESSED NUMBER DOES NOT MATCHED WITH THE SECRET NUMBER...<br> TRY AGAIN... ");
+}
+
+   </script> 
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var items = ["cake", "apple", "cookie", "chips", "patties"];
+ var ask = prompt("Welcome to bakery... what do you want from the Below List sir/ma'am?  1=>cake   2=>apple   2=>cookie   2=>chips   2=>patties");
+ ask = ask.toLowerCase();
+ var b = items.indexOf(ask);
+ for (var i = 0; i < items.length; i++) {
+     if(items[i] === ask) {
+         alert(ask + " is available at index No. " + b);
+         break; 
+     }
+ } 
+ if(items[i] !== ask) {
+     alert("Sorry Sir/Ma'am " + ask + " is not available in our bakery");
+ } 
+
+    </script>
+</body>
+</html>

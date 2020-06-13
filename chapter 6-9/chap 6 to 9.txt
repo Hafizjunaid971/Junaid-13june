@@ -1,0 +1,90 @@
+// 1. Write a program to take a number in a variable, do the required arithmetic to display the following result in your browser:
+
+var a = 10;
+
+document.write("<br><br>The value of a is : "+a);
+document.write("<br>============================================")
+++a;
+document.write("<br>The value of ++a is "+a);
+
+document.write("<br> Now the value of a is : "+a);
+
+document.write("<br><br><br>The value of a++ is : "+(a++));
+document.write("<br>Now the value of a is : "+a);
+
+--a;
+document.write("<br><br><br>The value of --a is : "+a);
+
+document.write("<br>Now the value of a is : "+a);
+
+document.write("<br><br><br>The value of a-- is : "+(a--));
+document.write("<br>The value of a is : "+a);
+
+
+// 2. What will be the output in variables a, b & result after execution of the following script: var a = 2, b = 1; var result = --a - --b + ++b + b--;
+
+var a = 2, b = 1;
+result = --a - --b + ++b + b--;
+document.write("<br><br><br>Result is : "+result);
+
+
+
+
+// 3. Write a program that takes input a name from user & greet the user.
+
+var nam = prompt("ENTER UR NAME...");
+
+document.write("<br><br><br> Well Come Dear...!"+nam);
+
+
+
+
+// 5. Write a program to take input a number from user & display it’s multiplication table on your browser. If user does not enter a new number, multiplication table of 5 should be displayed by default.
+
+
+var table = prompt("ENTER THE NUMBER TO PRINT MULTIPLICATION TABLE...");
+
+var length = prompt("ENTER THE LENGTH OF TABLE U WANT TO PRINT...");
+
+for (i=1;i<=length;i++){
+    document.write(table +" * "+i+ " = "+table*i+" <br>");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 6. Take  a) Take three subjects name from user and store them in 3 different variables.
+document.write("<br>Subject  Total Marks  Obtained Marks Percentage ");
+
+var sub1 = prompt("ENTER FIRST SUBJECT...");
+
+var sub2 = prompt("ENTER SECOND SUBJECT...");
+
+var sub3 = prompt("ENTER THIRD SUBJECT...");
+
+var total = 100;
+
+var mark1 = prompt("ENTER "+sub1+ "'s MARKS..");
+var mark2 = prompt("ENTER "+sub2+ "'s MARKS..");
+var mark3 = prompt("ENTER "+sub3+ "'s MARKS..");
+
+
+document.write("<br>")
+document.write(sub1+"|  |   |  |  |"+total+"|  |   |   |   |  |"+mark1+"|  |   |   |    |   |    |  |  |"+(mark1*100)/total+"%.");
+document.write("<br>")
+document.write(sub2+"|  |   |"+total+"|    |   |"+mark2+"|       |      |"+(mark2*100)/total+"%.");
+document.write("<br>")
+document.write(sub3+"|     |"+total+"|       |"+mark3+"|             |"+(mark3*100)/total+"%.");
+
+
+

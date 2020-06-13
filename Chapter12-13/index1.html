@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <h3> Check sting number Small Capital and digit Number</h3>
+    <h3>Enter a string number</h3> 
+    <input type="text" id="num_value" name="num_value" size="5">
+    
+    <button onclick="check_number()">Check Number</button>
+    
+    <p id="junaid"></p>
+    <script>
+       function check_number() {
+    var num_value= document.getElementById("num_value").value;
+    
+    
+        if (num_value>=65 && num_value<=90)
+            result=num_value+"Character is a capital letter";
+    
+    
+        else if (num_value>=97 && num_value<=122)
+            result=num_value+"Character is a small letter";
+        else if (num_value>=48 && num_value<=57)
+      result=num_value+"Character is a digit";
+        else if ((num_value>0 && num_value<=47)||(num_value>=58 && num_value<=64)||
+                   (num_value>=91 && num_value<=96)||(num_value>=123 && num_value<=127))
+                   result=num_value+"Character is a special symbol";
+                   document.getElementById("junaid").innerHTML = result;
+       }
+    
+    </script>  
+    
+</body>
+</html>

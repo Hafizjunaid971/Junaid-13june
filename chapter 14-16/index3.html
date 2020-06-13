@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    
+    
+    
+    
+    <script>
+        
+        
+        var Color = ["White", "Black", "Sky"];
+    
+    alert( Color[0] ); // 
+    alert( Color[1] ); // 
+    alert( Color[2] ); // 
+    
+    var begning = prompt("Enter a Color Name To Begning Add?");
+    
+    Color.unshift(begning);
+    // document.write("Update list at he begning of list Color ");
+    alert("Update list at he begning of list Color     "  + Color );
+    
+        // document.write("Update list at he end of list Color ");
+    var ending = prompt("Enter a Color Name to Add The End of List?");
+    Color.push(ending);
+    alert("Update list at he End of list Color     "  + Color );
+    
+    
+    //two or more color added
+    var ask = prompt("Enter a Two or more color to Begning of the Array");
+    Color.unshift(ask);
+    var ask = prompt("Enter a Two or more color to Begning of the Array");
+    Color.unshift(ask);
+    alert("Two or More Color Added at he begning  The New List :   "  + Color );
+    
+    
+    //delete the first Color
+    
+    
+    alert("This Color Delete : "+ Color.shift() ); // remove first Color
+    
+    alert( "The New list: "+Color ); 
+    
+    //delete the laste color
+    alert("This Color Delete "+Color.pop());
+    alert("After delete First Color New List :"+ Color );
+    
+    
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>

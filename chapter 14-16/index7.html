@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <form id="myForm">
+        <select id="selectNow">
+           <option>Apple</option>
+           <option>Samsung</option>
+           <option>Motorola</option>
+           <option>Nokia</option>
+           <option> Sony</option>
+           <option> Haier</option>
+      
+        </select>
+</form>
+<p>Select and click the button</p> 
+<script>
+    
+ function display() {
+     var obj = document.getElementById("selectNow");
+     document.write(obj.options[obj.selectedIndex].text);
+ }
+</script>
+</body>
+</html>

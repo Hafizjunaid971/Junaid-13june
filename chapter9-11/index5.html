@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+var sub1 = prompt("ENTER FIRST SUBJECT MARKS...");
+
+var sub2 = prompt("ENTER SECOND SUBJECT MARKS...");
+
+var sub3 = prompt("ENTER THIRD SUBJECT MARKS...");
+
+var total = prompt("ENTER THE TOTAL MARKS...");
+
+document.write("TOTAL MARKS : "+ total);
+var obtained = sub1+sub2+sub3;
+document.write("TOTAL OBTAINED MARKS : "+obtained);
+var percentage = obtained*100/total;
+document.write("PERCENTAGE : "+percentage+ " %");
+
+if (percentage>=80){
+    document.write("GRADE : A1  <br>  REMARKS : EXCELLENT " 
+    )
+}
+else if (percentage>=70){
+    document.write("GRADE : A  <br>  REMARKS : GOOD " 
+    )
+}
+if (percentage>=60){
+    document.write("GRADE : B  <br>  REMARKS : YOU NEED TO IMPROVE " 
+    )
+}
+if (percentage < 60){
+    document.write("GRADE : FAIL  <br>  REMARKS : SORRY " 
+    )
+}
+    </script>
+</body>
+</html>

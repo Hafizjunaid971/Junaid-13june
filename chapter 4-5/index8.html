@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+document.write("SHOPPING CART...<br>===========================<br>");
+var item1 = 650;
+document.write("THE PRICE OF ITEM ONE IS "+item1);
+var quant1 = prompt("ENTER THE QUANTITY OF ITEM 1 TO PURCHASE..");
+document.write("<br> QUANTITY OF ITEM1 ORDERED IS "+quant1);
+var price1 = quant1*item1;
+
+var item2 = 100;
+document.write("<br>THE PRICE OF ITEM TWO IS "+item2);
+var quant2 = prompt("ENTER THE QUANTITY OF ITEM 2 TO PURCHASE..");
+var price2 = quant2*item2;
+document.write("<br>QUANTITY OF ITEM2 ORDERED IS "+quant2);
+
+var shipping = "100";
+document.write("<br>SHIPPING CHARGES : "+shipping);
+
+document.write("<br>TOTAL COST OF YOUR ORDER IS "+((+price1)+(+price2)+(+shipping)));
+    </script>
+</body>
+</html>

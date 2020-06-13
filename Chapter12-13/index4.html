@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h3> Check vowels </h3>
+<h3>Enter a string number</h3> 
+<input type="text" id="num_value" name="num_value" size="5">
+
+<button onclick="check_number()">Check Number</button>
+
+<p id="junaid"></p>
+<script>
+   function check_number() {
+var num_value= document.getElementById("num_value").value;
+if (num_value =='a' || num_value== 'A' || num_value =='e' || num_value== 'E'||
+ num_value== 'i'||num_value=='I' ||num_value=='o'||num_value=='O'||num_value=='u'||
+ num_value=='U')
+  {
+	result = num_value +   "  Vowels Alphabate";
+	 }
+  
+	 else  {
+	result = num_value +" your input alphabet not vowels.";
+	 }
+document.getElementById("junaid").innerHTML = result;
+ }
+</script>
+    
+</body>
+</html>
